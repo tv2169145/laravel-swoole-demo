@@ -84,7 +84,8 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             //設定自動重連ws
-            socket = new WebSocket("ws://laravel-swoole.test:1215");
+            socket = new WebSocket("ws://192.168.51.84:1215/");
+            // socket = new WebSocket("ws://laravel-swoole.test:1215");
             // socket = new ReconnectingWebSocket("ws://laravel-swoole.test:1215", null, {debug: true, reconnectInterval: 3000});
 
             const offline = `<span class="badge bg-secondary">Not connected</span>`;
