@@ -30,6 +30,6 @@ class LoginController extends Controller
     {
         dump("broadcast", $data);
         $message = "{$data['username']}: {$data['message']}";
-        $websocket->emit("broadcast", $message);
+        $websocket->broadcast()->emit("broadcast", $message);
     }
 }
